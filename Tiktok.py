@@ -29,7 +29,7 @@ class Statistics(BaseModel):
     duration: Optional[int] = Field(None, title='Video Duration')
     play: Optional[str] = Field(None, title='Non Watermarked URL')
     wmplay: Optional[str] = Field(None, title='Watermarked URL')
-    music: Optional[str] = FIeld(None, title='Sound URL')
+    music: Optional[str] = Field(None, title='Sound URL')
     music_info: Optional[MusicInfo] = None
     play_count: Optional[int] = Field(None, title='Sound Play Count')
     digg_count: Optional[int] = Field(None, title='Like Count')
