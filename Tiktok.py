@@ -47,7 +47,7 @@ class TikTok(BaseModel):
     data: Optional[Statistics] = None
 
 
-    async def get_video_binary(self,download_url):
+    async def get_video_binary(self):
         try:
             async with aiohttp.ClientSession() as session:
                 async with session.get(self.data.play) as video:
